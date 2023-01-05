@@ -1,0 +1,28 @@
+<!-- Basic Step to Create Function in React -->
+
+<html> 
+    <body>
+        <div id="root"></div>
+    </body>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        const Title = () => (                                 // Way 1
+            <h3 id="title" style={{color: "pink"}} onMouseEnter={() => console.log("mo use enter")}>
+                Hello world
+            </h3>
+        );
+        function Button() {                                  // Way 1
+            return (
+            <button 
+                style={{backgroundColor: "yellow"}} onClick={() => console.log("im clicked")}>
+                Click me!
+                </button>
+            );
+        }
+        const Container = <div><Title/> <Button/></div>      // First letter should be upper case.
+    </script>                                  
+</html> 
+
