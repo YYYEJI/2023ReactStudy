@@ -14,15 +14,16 @@
                 Hello world
             </h3>
         );
-        function Button() {                                  // Way 1
+        function Button() {                                  // Way 2 
             return (
             <button 
                 style={{backgroundColor: "yellow"}} onClick={() => console.log("im clicked")}>
-                Click me!
+                    Click me!
                 </button>
             );
         }
         const Container = <div><Title/> <Button/></div>      // First letter should be upper case.
+        ReactDOM.render(Container, root);
     </script>                                  
 </html> 
 
