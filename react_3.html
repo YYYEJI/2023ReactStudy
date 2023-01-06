@@ -9,12 +9,12 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <script type="text/babel">
-        const Title = () => (                                 // Way 1
+        const Title = () => (                                 // arrow function
             <h3 id="title" style={{color: "pink"}} onMouseEnter={() => console.log("mouse enter")}>
                 Hello world
             </h3>
         );
-        function Button() {                                  // Way 2 
+        function Button() {                                  // normal function
             return (
             <button 
                 style={{backgroundColor: "yellow"}} onClick={() => console.log("im clicked")}>
@@ -22,7 +22,7 @@
                 </button>
             );
         }
-        const Container = <div><Title/> <Button/></div>      // First letter should be upper case.
+        const Container = <div><Title/> <Button/></div>      // rirst letter should be upper case.
         ReactDOM.render(Container, root);
     </script>                                  
 </html> 
