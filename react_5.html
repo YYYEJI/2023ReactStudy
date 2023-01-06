@@ -14,7 +14,8 @@
         function App() {
             const [counter, setCounter] = React.useState(0);       // parameter - default value, [initial value, function to modify the value]
             const onClick = () => {
-                setCounter(counter+1);        // this function automatically trigger re-rendering.
+                // setCounter(counter+1);             // this function automatically trigger re-rendering.
+                setCounter((current) => current+1);   // Same with line 17 but this line is more safer.
             }
             return (
                 <div>
